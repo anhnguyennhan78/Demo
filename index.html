@@ -49,19 +49,6 @@
 				<div class="col-sm-9" id="video-watcher"></div>
 			</div>
 		</div>
-
-		<script src="youtube.js"></script>
-		<script>
-			const videoLinks = document.getElementsByTagName("a");
-			for (let i = 0; i < videoLinks.length; i++) {
-				const videoLink = videoLinks[i];
-				const linkUrl = videoLink.getAttribute("href");
-				const thumbnailUrl = youtube.generateThumbnailUrl(linkUrl);
-
-				const thumbnailImg = document.createElement("img");
-				thumbnailImg.setAttribute("src", thumbnailUrl);
-				videoLink.appendChild(thumbnailImg);
-			}
-		</script>
+				
 	</body>
 </html>
